@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" 
+      integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" 
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" src="style.css" type="text/css" />
+    <title>Emak Coding</title>
+</head> 
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark pt-3 fixed-top">
+      <div class="container">
+        
+        <a href="#" class="navbar-brand"> <img src="img/emak-coding-logo.png" alt="" style="width: 70px; height: 50px; border-radius: 5px ;"></a>
+
+        <!-- hamburger menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- using data target on button this navmenu will collapse on small screen -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="list-item">
+              <a href="#how-to" class="nav-link">Cara Belajar</a>
+            </li>
+            <li class="list-item">
+              <a href="#learn" class="nav-link">Kurikulum</a>
+            </li>
+            <li class="list-item">
+              <a href="#faq" class="nav-link">FAQ</a>
+            </li>
+            <li class="list-item">
+              <a href="#instructors" class="nav-link">Pengajar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="bg-dark text-light p-5 mt-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+            <!-- to assign element as flexbox on bootstrap-->
+            <div class="py-4">
+                <h1 class="pb-3 mt-3">
+                    Emak Belajar <span class="text-primary">Coding</span>
+                </h1>
+                <p class="lead pb-4">
+                    Emak Coding adalah tempat belajar coding online, yang di buat oleh Emak dan untuk Emak.
+                    <br>
+                    <br>
+                    Kami akan membantu emak untuk membuat Website dari NOL, dengan
+                    mengajarkan Dasar Pemrograman dan Menggunakan Framework terbaru.
+                    <br>
+                    <br>
+                    Jadi... Tunggu apa lagi, mak ? <br> Mari kita mulai Belajar Coding !
+                </p>
+
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#daftar">
+                  Daftar Sekarang
+                </button>
+
+
+
+            </div>
+            <img
+                class="img-fluid w-50 d-none d-sm-block ms-5" 
+                src="img/hero.svg"
+                alt="emak belajar coding"
+            />
+            </div>
+        </div>
+    </section>
+
+    <!-- News Letter -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h4 class="mb-3 mb-md-0 me-5">Mau Tips Belajar Coding ?</h3>
+            
+                <div class="input-group news-input" style="width: 68%;">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Email kamu" 
+                    aria-label="Recipient's username" 
+                    aria-describedby="button"
+                    />
+                    <button 
+                    class="btn btn-dark btn-lg" 
+                    type="button" 
+                    >
+                    Kirim
+                    </button>
+                </div>            
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature -->
+
+    <section class="p-5 mt-5">
+      <div class="container">
+        <h2 class="text-center pb-5" id="how-to">Pilihan Cara Belajar</h1>
+        <div class="row text-center g-5">
+
+          <div class="col-md mb-3">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Online</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae rerum dolore dicta blanditiis praesentium!
+                </p>
+                <a href="#" class="btn btn-light">Read More</a>                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md mb-3">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hybrid</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae rerum dolore dicta blanditiis praesentium!
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">Tatap Muka</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae rerum dolore dicta blanditiis praesentium!
+                </p>
+                <a href="#" class="btn btn-light">Read More</a>                               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Section -->
+
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/basic.svg" alt="dasar pembuatan website" class="img-fluid">
+          </div>
+          <div class="col-md p-5">
+            <h2 class="mb-3">Dasar Pembuatan Website</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi harum doloremque consectetur. Quasi labore dicta earum, ab accusamus distinctio? Mollitia.
+            </p>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis hic doloribus beatae modi a quis officiis mollitia, dolor nisi officia, reiciendis nostrum eum odio soluta! Incidunt ut eaque delectus vitae possimus eos, praesentium ipsum alias?
+            </p>
+            <a href="" class="btn btn-dark mt-3">
+              <i class="bi bi-chevron-double-right me-2"></i>Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">          
+          <div class="col-md p-5">
+            <h2 class="mb-3">Belajar React</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi harum doloremque consectetur. Quasi labore dicta earum, ab accusamus distinctio? Mollitia.
+            </p>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis hic doloribus beatae modi a quis officiis mollitia, dolor nisi officia, reiciendis nostrum eum odio soluta! Incidunt ut eaque delectus vitae possimus eos, praesentium ipsum alias?
+            </p>
+            <a href="" class="btn btn-secondary mt-3">
+              <i class="bi bi-chevron-double-right me-2"></i>Read More
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/react.svg" alt="dasar pembuatan website" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Pertanyaan Umum - FAQ</h2>
+
+        <div class="accordion accordion-flush" id="faq">
+          <!-- faq 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Siapa saja yang boleh belajar di Emak Coding ?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#faq">
+              <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quas sequi aspernatur voluptate expedita ea atque veniam, asperiores natus repudiandae odit dolorem tenetur, ad libero.</div>
+            </div>
+          </div>
+
+          <!-- faq 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Berapa lama waktu yang diperlukan, hingga saya bisa membuat website sendiri ?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#faq">
+              <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, rerum autem reiciendis quos officiis eum, perspiciatis, mollitia aliquid alias repellat ratione molestiae esse laborum delectus.</div>
+            </div>
+          </div>
+
+          <!-- faq 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Apakah semuanya benar-benar online ?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#faq">
+              <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aspernatur error repellat alias maxime quibusdam quod omnis ipsam voluptas deleniti.</div>
+            </div>
+          </div>
+
+          <!-- faq 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Apakah saya harus memiliki komputer ?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#faq">
+              <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aspernatur error repellat alias maxime quibusdam quod omnis ipsam voluptas deleniti.</div>
+            </div>
+          </div>
+
+          <!-- faq 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Apakah dana bisa dikembalikan jika saya tidak puas dengan cara belajar Emak Coding ?
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#faq">
+              <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aspernatur error repellat alias maxime quibusdam quod omnis ipsam voluptas deleniti.</div>
+            </div>
+          </div>
+
+          <!-- faq 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Apakah team Emak Coding bisa datang untuk mengajar Karyawan di Perusahaan saya ?
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#faq">
+              <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aspernatur error repellat alias maxime quibusdam quod omnis ipsam voluptas deleniti.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teacher -->
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Team Pengajar</h2>
+        <p class="lead text-white text-center py-5">
+          Semua instruktur Emak Coding, mempunyai pengalaman lebih dari 5 tahun mengajar dan bekerja sebagai Developer.
+        </p>
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/med/men/2.jpg" alt="" class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Hyenegan</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere similique consectetur, esse officia aliquid delectus rem hic atque iure!
+                </p>
+                <a href="#"><i class="bi bi-twitter mx-2 text-secondary"></i></a>
+                <a href="#"><i class="bi bi-instagram mx-2 text-secondary"></i></a>
+                <a href="#"><i class="bi bi-linkedin mx-2 text-secondary"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/med/women/2.jpg" alt="" class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Sherine</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere similique consectetur, esse officia aliquid delectus rem hic atque iure!
+                </p>
+                <a href="#"><i class="bi bi-twitter mx-2 text-secondary"></i></a>
+                <a href="#"><i class="bi bi-instagram mx-2 text-secondary"></i></a>
+                <a href="#"><i class="bi bi-linkedin mx-2 text-secondary"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/med/women/21.jpg" alt="" class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Flora</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere similique consectetur, esse officia aliquid delectus rem hic atque iure!
+                </p>
+                <a href="#"><i class="bi bi-twitter mx-2 text-secondary"></i></a>
+                <a href="#"><i class="bi bi-instagram mx-2 text-secondary"></i></a>
+                <a href="#"><i class="bi bi-linkedin mx-2 text-secondary"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/med/men/1.jpg" alt="" class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">David</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere similique consectetur, esse officia aliquid delectus rem hic atque iure!
+                </p>
+                <a href="#"><i class="bi bi-twitter mx-2 text-secondary"></i></a>
+                <a href="#"><i class="bi bi-instagram mx-2 text-secondary"></i></a>
+                <a href="#"><i class="bi bi-linkedin mx-2 text-secondary"></i></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+
+          <div class="col-md me-5">
+            <h2 class="text-center mb-4">Lokasi kami</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item"> 
+                <i class="bi bi-building me-2"></i>
+                <span class="fw-bold">Kantor </span> Jl. Kebahagiaan No. 5 Cirebon, Jawa Barat
+              </li>
+              <li class="list-group-item"> 
+                <i class="bi bi-telephone-forward-fill me-2"></i> 
+                <span class="fw-bold">Telephone </span> +62 231 456 78910
+              </li>
+              <li class="list-group-item"> 
+                <i class="bi bi-envelope me-2"></i>
+                <span class="fw-bold">Email </span> contact@emakcoding.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md">
+            <iframe class="me-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126791.1214350153!2d108.4839977231361!3d-6.742687125906321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee2649e6e5bbb%3A0x70a07638a7fe12fe!2sCirebon%2C%20Cirebon%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1661183105803!5m2!1sen!2sid" width="370" height="250" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5 pb-1 bg-dark text-white text-center position-relative">
+      <p class="lead mb-5">Copyright &copy; 2022 Emak Coding</p>
+      <p class="text-secondary">with &#9829; <a class="text-secondary" href="https://ariesan.github.io/" style="text-decoration: none;">Ariesan</a></p>
+      <a href="" class="position-absolute top-0 end-0">
+        <i class="bi bi-arrow-up-square-fill h1 text-light"></i>
+      </a>
+    </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="daftar" tabindex="-1" aria-labelledby="daftarLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="daftarLabel">Daftar Sekarang</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Silahkan isi formulir ini, dan kami akan menghubungi kamu.</p>
+        <form action="https://formsubmit.co/ariesan@email.com" method="POST">
+          <div class="mb-3">
+            <label for="first-name" class="col-form-label">Nama</label>
+            <input type="text" class="form-control" id="first-name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="col-form-label">Telephone</label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Kirim</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
